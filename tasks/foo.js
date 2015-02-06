@@ -2,10 +2,12 @@
 module.exports = function(grunt) {
     
     grunt.registerMultiTask('troll', 'Troll people', function() {
+        var name = this.data.name || this.target;
+        
         if (this.data.awesome) {
-            grunt.log.ok('You are AWESOME!');
+            grunt.log.ok(name + ' is AWESOME!');
         } else {
-            grunt.fail.warn('You are ... less than awesome.');
+            grunt.fail.warn(name + ' is ... less than awesome.');
         }
     });
     

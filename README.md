@@ -9,5 +9,4 @@ _Topics Covered_
 * Accessing and modifying config options
 * Using the Grunt log
 * Using targets
-* Working with files
 * Async tasks

@@ -2,14 +2,15 @@ module.exports = function(grunt) {
 
     grunt.initConfig({
         osdetect: {
+            noconfig: {},
+            
             troll: {
                 taskMap: {
-                    'linux': ['troll:linux'],
-                    'windows': ['troll:windows']
+                    'linux': 'troll:linux',
+                    'windows': 'troll:windows',
+                    'osx': 'troll:other'
                 }
-            },
-            
-            noconfig: {}
+            }
         },
         
         troll: {
@@ -18,6 +19,10 @@ module.exports = function(grunt) {
             },
             windows: {
                 awesome: false
+            },
+            other: {
+                name: null,
+                awesome: null
             }
         }
     });
