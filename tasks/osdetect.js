@@ -57,9 +57,13 @@ module.exports = function(grunt) {
             tasksToRun = this.data.taskMap.osx;
         }
         
+        // Now we add the task specified by the config to the queue
+        
         grunt.task.run(tasksToRun);
         
         grunt.log.ok('OS detected, tasks added to queue: ', tasksToRun || 'none');
+        
+        // And don't forget to tell Grunt you're all done with async actions!
         done();
     });
     
