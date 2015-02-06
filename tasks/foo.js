@@ -5,9 +5,9 @@ module.exports = function(grunt) {
         var name = this.data.name || this.target;
         
         if (this.data.awesome) {
-            grunt.log.ok(name + ' is AWESOME!');
+            grunt.log.writeln(name + ' is AWESOME!');
         } else {
-            grunt.fail.warn(name + ' is ... less than awesome.');
+            grunt.log.writeln(name + ' is ... less than awesome.');
         }
     });
     
