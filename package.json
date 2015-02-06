@@ -1,0 +1,17 @@
+{
+  "name": "custom-grunt-examples",
+  "version": "0.1.0",
+  "description": "Examples of custom grunt tasks",
+  "scripts": {
+    "start": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jakerella/custom-grunt-examples"
+  },
+  "author": "Jordan Kasper",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
+}
